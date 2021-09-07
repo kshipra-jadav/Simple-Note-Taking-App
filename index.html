@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Note Taking App!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <p class="top">You Can Type Your Notes Here!</p>
+  <img src="icons/gsfc-logo.png" alt="" class="main-logo" align = "right">
+
+
+  <div class="notes" contenteditable="true" id = "print" data-text="Enter text here..."></div>
+  <!-- <textarea class = "notes" rows="8" cols="80" placeholder="Enter text here..."></textarea> -->
+
+
+  <div class="buttons">
+    <img src="icons/bold.png" alt="" class="images" data-command = 'bold'>
+    <img src="icons/italics.png" alt="" class="images" data-command = 'italic'>
+    <img src="icons/underline.png" alt="" class="images" data-command = 'underline'>
+    <p></p>
+    <img src="icons/left-text-align.png" alt="" class="images" data-command = 'justifyLeft'>
+    <img src="icons/center-align.png" alt="" class="images" data-command = 'justifyCenter'>
+    <img src="icons/justify-text.png" alt="" class="images" data-command = 'justify'>
+    <p></p>
+    <img src="icons/add.png" alt="" class="images big" data-command = 'fontSize'>
+    <img src="icons/minus.png" alt="" class="images small" data-command = 'fontSize'>
+    <img src="icons/number-list.png" alt="" class="images" data-command = 'insertOrderedList'>
+    <p></p>
+    <img src="icons/printing.png" alt="" class="images" data-command = "print">
+    <img src="icons/close.png" alt="" class="images" data-command = "removeFormat">
+    <img src="icons/list.png" alt="" class="images" data-command = 'insertUnorderedList'>
+
+  </div>
+
+  <p class="wordcount"></p>
+
+  <script src="Countable.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+
+  </body>
+</html>
